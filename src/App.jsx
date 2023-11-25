@@ -1,16 +1,22 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import ItemListContainer from './components/ItemListContainer'
-import { Center } from '@chakra-ui/react'
+import ItemDetailContainer from './components/ItemDetailContainer'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+
 const App = () => {
   return (
     <div>
-      
-      <Navbar />
-      <Center bg='tomato' h='100px' color='white'>
-  Bienvenidos
-</Center>
-  
+      <BrowserRouter>
+      <Navbar/> 
+      <Routes>
+        <Route exact path='/' element={<ItemListContainer/>}/>
+        <Route exact path='/item/:id' element={<ItemDetailContainer/>}/>
+        <Route exact path='/productos/' element={<ItemDetailContainer/>}/>
+        <Route exact path='/productos/:categoria' element={<ItemDetailContainer/>}/>
+
+      </Routes>
+      </BrowserRouter>
     </div>
   )
 }

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "titulo": "Hombre",
+        "descripcion": "Remera de Hmbre",
+        "categoria": "A",
+        "imagen": "/img/1.webp",
+        "precio": 1500
+    },
+    {
+        "id": 2,
+        "titulo": "Hombre",
+        "descripcion": "Remera de Hmbre",
+        "categoria": "A",
+        "imagen": "/img/4.webp",
+        "precio": 1800
+    },
+    {
+        "id": 3,
+        "titulo": "Hombre",
+        "descripcion": "Remera de Hmbre",
+        "categoria": "A",
+        "imagen": "/img/3.webp",
+        "precio": 2000
+    },
+    {
+        "id": 4,
+        "titulo": "Mujer",
+        "descripcion": "Remer de mujer",
+        "categoria": "B",
+        "imagen": "/img/10.webp",
+        "precio": 3000
+    },
+    {
+        "id": 5,
+        "titulo": "Mujer",
+        "descripcion": "Remer de mujer",
+        "categoria": "B",
+        "imagen": "/img/11.webp",
+        "precio": 1500
+    },
+    {
+        "id": 6,
+        "titulo": "Mujer",
+        "descripcion": "Remer de mujer",
+        "categoria": "B",
+        "imagen": "/img/12.webp",
+        "precio": 5000
+    },
+    {
+        "id": 7,
+        "titulo": "Zapatillas",
+        "descripcion": "Zapatillas de Mujer",
+        "categoria": "C",
+        "imagen": "/img/Z1.jpg",
+        "precio": 8000
+    },
+    {
+        "id": 8,
+        "titulo": "Zapatillas",
+        "descripcion": "Zapatillas de Mujer",
+        "categoria": "C",
+        "imagen": "/img/Z2.jpeg",
+        "precio": 6000
+    },
+    {
+        "id": 9,
+        "titulo": "Zapatillas",
+        "descripcion": "Zapatillas de Hombre",
+        "categoria": "C",
+        "imagen": "/img/Z3.jpeg",
+        "precio": 7000
+    }    
+]

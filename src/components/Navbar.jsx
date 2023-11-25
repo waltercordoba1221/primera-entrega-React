@@ -1,33 +1,36 @@
 import React from 'react'
-import Cartwidget from './cartwidget'
-import { Menu, MenuButton, MenuList, MenuItem ,Flex ,Box, Spacer } from '@chakra-ui/react'
+import Cartwidget from './CartWidget'
+import { Menu, MenuButton, MenuList, MenuItem, Flex, Box, Spacer } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
+
 const Navbar = () => {
   return (
     <div>
-        
-        
-        <Flex>
-  <Box p='4'>
-  <h3>Tienda de ropa</h3>
+      <Flex>
+  <Box>
+     <Link to={"/"}> <img src="logo.png" width={50} alt="" /></Link>
   </Box>
   <Spacer />
   <Menu>
-  <MenuButton>
-    Categoria
-  </MenuButton>
-  <MenuList>
+   <MenuButton>
+    Categorias
+   </MenuButton>
+   <MenuList>
+    <Link to="/producto/A" >
     <MenuItem>A</MenuItem>
+    </Link>
+    <Link to="/producto/B">
     <MenuItem>B</MenuItem>
-    <MenuItem>C</MenuItem>
+    </Link>
+    <Link to="/producto/C">C</Link>
   </MenuList>
 </Menu>
-  <Spacer />
-  <Box p='4'>
-  <Cartwidget />
+  <Spacer/>
+  <Box>
+      <Cartwidget/>
   </Box>
 </Flex>
-
-        
+  
     </div>
   )
 }

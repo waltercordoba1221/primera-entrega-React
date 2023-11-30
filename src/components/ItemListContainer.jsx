@@ -4,15 +4,15 @@ import ItemList from './ItemList.jsx';
 import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
+  const [productos, setProductos] = useState([]);
   const categoria = useParams().categoria;
-const [productos, setProductos] = useState([])
 console.log(categoria);
 
 useEffect(() => {
      pedirDatos()
       .then((res)=>{
         if(categoria){
-          setProductos(res.filter((prod)=> prod.categoria === categoria) )
+          setProductos(res.filter((productos)=> productos.categoria === categoria))
         }else{
           setProductos(res)
         }

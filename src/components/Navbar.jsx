@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div>
+    
       <Flex>
   <Box>
      <Link to={"/"}> <img src="logo.png" width={50} alt="" /></Link>
@@ -16,13 +16,18 @@ const Navbar = () => {
     Categorias
    </MenuButton>
    <MenuList>
-    <Link to="/producto/A" >
-    <MenuItem>A</MenuItem>
+
+    
+    <Link to='/productos/Hombres' >
+    <MenuItem>Hombres</MenuItem>
     </Link>
-    <Link to="/producto/B">
-    <MenuItem>B</MenuItem>
+    <Link to='/productos/Mujeres'>
+    <MenuItem>Mujer</MenuItem>
     </Link>
-    <Link to="/producto/C">C</Link>
+    
+    <Link to='/productos/Zapatillas'>
+    <MenuItem>Zapatillas</MenuItem>
+    </Link>
   </MenuList>
 </Menu>
   <Spacer/>
@@ -30,8 +35,6 @@ const Navbar = () => {
       <Cartwidget/>
   </Box>
 </Flex>
-  
-    </div>
   )
 }
 

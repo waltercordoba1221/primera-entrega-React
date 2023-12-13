@@ -1,0 +1,47 @@
+.card{
+    display: inline-block;
+    border: black solid 1px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.imagenes{
+    width: 300px;
+}
+.btn{
+    background: #67ca50;
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
+.Count{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.btn2{
+    background-color: blueviolet;
+    color: wheat;
+    border-radius: 5px;
+    width: 2rem;
+    height: 2rem;
+}
+.btn3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    color: wheat;
+    border-radius: 5px;
+    width: 4rem;
+    height: 2rem;
+    margin: 5px;
+}
+.container{
+    margin: 30px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: start;
+}

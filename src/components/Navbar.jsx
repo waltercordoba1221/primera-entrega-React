@@ -8,7 +8,7 @@ const Navbar = () => {
     
       <Flex>
   <Box>
-     <Link to={"/"}> <img src="logo.png" width={50} alt="" /></Link>
+     <Link to={"/"}> <img src="logo.png" width={50} alt="imagen" /></Link>
   </Box>
   <Spacer />
   <Menu>
@@ -32,7 +32,7 @@ const Navbar = () => {
 </Menu>
   <Spacer/>
   <Box>
-      <Cartwidget/>
+   <Cartwidget/>
   </Box>
 </Flex>
   )

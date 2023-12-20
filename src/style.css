@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --clr-main: #c56cee;
+    --clr-main-light: #efdaf9;
+}
 .card{
     display: inline-block;
     border: black solid 1px;
@@ -32,16 +43,29 @@
     background-color: blueviolet;
     color: wheat;
     border-radius: 5px;
-    width: 4rem;
+    width: 5rem;
     height: 2rem;
     margin: 5px;
 }
 .container{
     margin: 30px;
 }
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    align-items: start;
+    gap: .5rem;
+    align-items: flex-start;
+}
+
+.formulario input {
+    padding: .5rem;
+    width: 18rem;
+    border-radius: .5rem;
+    border: px solid black;
+}
+
+.formulario input:focus {
+    outline: 0;
+    border: 1px solid var(--clr-main);
+    outline: 1px solid var(--clr-main);
 }

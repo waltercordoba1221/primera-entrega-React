@@ -1,6 +1,6 @@
 import { createContext, useState, } from "react";
 import { Form } from "react-router-dom";
-import Formulario from "../components/Formulario";
+import Formulario from "../components/Contactos";
 
 export const CartContext = createContext()
 

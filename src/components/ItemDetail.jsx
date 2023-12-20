@@ -1,4 +1,4 @@
-import { Card, CardBody,Stack, Heading, Divider, CardFooter, ButtonGroup, Button, Text, Image } from '@chakra-ui/react'
+import { Card, CardBody, Stack, Heading, Divider, CardFooter, ButtonGroup, Text, Image } from '@chakra-ui/react'
 import ItemCount from './ItemCount'
 import { useContext, useState } from 'react'
 import { CartContext } from '../context/CartContext'
@@ -42,9 +42,7 @@ const ItemDetail = ({item}) => {
   <Divider />
   <CardFooter>
     <ButtonGroup spacing='2'>
-      <Button variant='solid' colorScheme='blue'>
-        ver detalle
-      </Button>
+      
       <ItemCount cantidad={cantidad} Sumar={Sumar} Restar={Restar} Agregar={()=> Agregar(item, cantidad)} 
       
       />
